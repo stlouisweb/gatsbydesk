@@ -1,3 +1,17 @@
+
+# GatsbyDesk (working title)
+
+This is an experiment using [ElectronJS](https://electronjs.org/) and [React](https://reactjs.org/) to create a GUI application for building and managing static websites with [GatsbyJS](https://www.gatsbyjs.org/).
+
+### Getting Started:
+No compiled builds for this app have been released yet, so currently the only way to use this app is to:
+1. `$ git clone https://github.com/stlouisweb/gatsbydesk`
+2. `$ cd gatsbydesk`
+3. `$ yarn install`
+4. `$ yarn electron-dev`
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
