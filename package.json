@@ -1,10 +1,11 @@
 {
   "name": "gatdesk",
   "version": "0.1.0",
-  "author": "Captain Electron",
+  "author": "Jeremy Plack",
   "homepage": "./",
   "private": true,
   "main": "public/electron.js",
+  "license": "MIT",
   "dependencies": {
     "electron-is-dev": "^0.3.0",
     "react": "^16.4.1",
