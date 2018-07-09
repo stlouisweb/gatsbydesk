@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-import * as menu from "./menu";
+import * as sites from "./sites";
 
 const AppReducer = combineReducers({
-  ...menu
+  ...sites
 });
 
 export default AppReducer;

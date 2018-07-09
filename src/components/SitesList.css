@@ -1,0 +1,6 @@
+.add-site.hide {
+  display: none;
+}
+.add-site.show {
+  display: block;
+}
