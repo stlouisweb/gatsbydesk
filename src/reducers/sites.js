@@ -21,7 +21,7 @@ export function sitesList(state = [], action) {
   }
 }
 
-export function selectActiveSite(state = 0, action) {
+export function activeSite(state = 0, action) {
   switch (action.type) {
     case SELECT_ACTIVE_SITE:
       return action.site;
