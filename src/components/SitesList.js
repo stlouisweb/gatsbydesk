@@ -1,7 +1,18 @@
 import React from "react";
 import "./SitesList.css";
 const Sites = ({ sites }) => {
-  return <ul>{sites.map(site => <li>{site.title}</li>)}</ul>;
+  return (
+    <div>
+      <h2>Sites</h2>
+      <ul>
+        {sites.length ? (
+          sites.map(site => <li>{site.title}</li>)
+        ) : (
+          <p>no sites</p>
+        )}
+      </ul>
+    </div>
+  );
 };
 
 const AddSiteModal = ({ show, addSite }) => {

@@ -5,7 +5,7 @@ import SitesList from "../components/SitesList";
 const mapStateToProps = state => {
   return {
     showAddSite: state.showAddSite,
-    sites: state.sites,
+    sites: state.sitesList,
     activeSite: state.activeSite
   };
 };
