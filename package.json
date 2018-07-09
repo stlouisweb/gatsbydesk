@@ -1,0 +1,42 @@
+{
+  "name": "gatdesk",
+  "version": "0.1.0",
+  "author": "Captain Electron",
+  "homepage": "./",
+  "private": true,
+  "main": "public/electron.js",
+  "dependencies": {
+    "antd": "^3.6.5",
+    "electron-is-dev": "^0.3.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0"
+  },
+  "scripts": {
+    "electron-dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-pack": "build --em.main=build/electron.js",
+    "preelectron-pack": "yarn build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.0",
+    "electron": "^2.0.4",
+    "electron-builder": "^20.19.2",
+    "wait-on": "^2.1.0"
+  },
+  "build": {
+    "appId": "com.example.electron-cra",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  }
+}
