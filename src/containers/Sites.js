@@ -1,5 +1,10 @@
 import { connect } from "react-redux";
-import { addSite, toggleAddSite, selectActiveSite } from "../actions/sites";
+import {
+  addSite,
+  toggleAddSite,
+  selectActiveSite,
+  requestAddSite
+} from "../actions/sites";
 import SitesList from "../components/SitesList";
 
 const mapStateToProps = state => {
@@ -12,7 +17,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     addSite: site => {
-      dispatch(addSite(site));
+      dispatch(requestAddSite(site));
     },
     toggleAddSite: () => {
       dispatch(toggleAddSite());

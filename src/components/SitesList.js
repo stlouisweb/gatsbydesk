@@ -30,7 +30,7 @@ const AddSiteModal = ({ show, addSite }) => {
           input.value = "";
         }}
       >
-        <label for="sitename">Site Name:</label>{" "}
+        <label htmlFor="sitename">Site Name:</label>{" "}
         <input
           ref={node => {
             input = node;
